@@ -34,11 +34,7 @@ export function AnimatedIcons({ icons }: { icons: any }) {
         {icons.map(({ icon, index }: any) => (
           <Container
             key={index}
-            className={cn(
-              sizeMap[icon.size || "lg"],
-              `circle-${index + 1}`,
-              icon.className
-            )}
+            className={cn("lg", `circle-${index + 1}`, icon.className)}
           >
             {icon.icon}
           </Container>
