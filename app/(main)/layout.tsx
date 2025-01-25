@@ -23,7 +23,7 @@ export default function MainLayout({ hero, features }: MainLayoutProps) {
   return (
     <main className="container ">
       {hero}
-      {features}
+      {/* {features} */}
     </main>
   );
 }
