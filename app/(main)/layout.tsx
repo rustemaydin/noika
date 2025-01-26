@@ -3,6 +3,7 @@ import { Metadata } from "next";
 
 import { siteConfig } from "@/config/site";
 import { SparklesPreview } from "@/components/spark";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: {
@@ -19,11 +20,13 @@ interface MainLayoutProps {
   hero: React.ReactNode;
   features: React.ReactNode;
   database: React.ReactNode;
+  services: React.ReactNode;
 }
 
 export default function MainLayout({
   hero,
   features,
+  services,
   database,
 }: MainLayoutProps) {
   return (
@@ -32,6 +35,8 @@ export default function MainLayout({
       <SparklesPreview />
       {/* {features} */}
       {database}
+      {services}
+      <Footer />
     </main>
   );
 }
