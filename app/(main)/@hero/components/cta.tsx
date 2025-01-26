@@ -10,6 +10,7 @@ import MarqueeComp from "./marquee-badges";
 import { cn } from "@/lib/utils";
 import DotPattern from "@/components/ui/dot-pattern";
 import { TextShimmer } from "@/components/ui/text-shimmer";
+import { Glow } from "@/components/ui/glow";
 
 function ElegantShape({
   className,
@@ -194,6 +195,10 @@ function HeroGeometric() {
                 />
                 Modern Teknolojilerle Yapay Zeka Destekli, Hızlı, Etkili ve
                 Ölçeklenebilir Web ve Mobil Çözümler
+                <Glow
+                  className="animate-appear-zoom z-40 delay-300"
+                  variant="bottom"
+                />
               </h1>
               <div className="flex items-center justify-center gap-1">
                 <span className="relative flex h-3 w-3 items-center justify-center">
