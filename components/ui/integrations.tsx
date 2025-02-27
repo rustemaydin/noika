@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/ui/marquee";
+import { StackedCircularFooter } from "./footer-text";
 
 const tiles = [
   {
@@ -192,7 +193,9 @@ export function Integrations() {
       <div className="container mx-auto bg-black">
         <div className="flex w-full flex-col items-center justify-center">
           <h1 className="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-800 via-white/90 to-rose-300  absolute top-20 md:text-5xl lg:text-7xl font-bold text-center text-white z-40 font-sans">
-            The best
+            <div className="block">
+              <StackedCircularFooter />
+            </div>
           </h1>
           <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
             <Marquee

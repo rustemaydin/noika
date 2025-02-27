@@ -19,7 +19,7 @@ export default function Connect() {
   React.useEffect(() => {
     animate(
       [
-        ["#pointer", { left: 360, top: 60 }, { duration: 0 }],
+        ["#pointer", { left: 320, top: 60 }, { duration: 0 }],
         ["#javascript", { opacity: 1 }, { duration: 0.3 }],
         [
           "#pointer",
@@ -30,7 +30,7 @@ export default function Connect() {
         ["#react-js", { opacity: 1 }, { duration: 0.3 }],
         [
           "#pointer",
-          { left: 360, top: 170 },
+          { left: 320, top: 170 },
           { at: "+0.5", duration: 0.5, ease: "easeInOut" },
         ],
         ["#react-js", { opacity: 0.4 }, { at: "-0.3", duration: 0.1 }],
@@ -44,7 +44,7 @@ export default function Connect() {
         ["#next-js", { opacity: 1 }, { duration: 0.3 }],
         [
           "#pointer",
-          { left: 360, top: 60 },
+          { left: 320, top: 60 },
           { at: "+0.5", duration: 0.5, ease: "easeInOut" },
         ],
         ["#next-js", { opacity: 0.5 }, { at: "-0.3", duration: 0.1 }],
@@ -69,13 +69,10 @@ export default function Connect() {
 
   return (
     <section className="relative mx-auto  ">
-      <HighlightGroup className="group h-full">
-        <div
-          className="group/item h-full md:col-span-6 lg:col-span-12"
-          data-aos="fade-down"
-        >
-          <HighlighterItem className="rounded-3xl p-6">
-            <div className="relative z-20 h-full overflow-hidden rounded-3xl border-2  border-[#f97316]/30 bg-background ">
+      <HighlightGroup className="group h-full w-[400px] md:w-full">
+        <div className="group/item h-full " data-aos="fade-down">
+          <HighlighterItem className="rounded-md px-6">
+            <div className="relative z-20 h-full overflow-hidden rounded-xl border-2  border-[#f97316]/30 bg-background ">
               <Particles
                 className="absolute inset-0 -z-10 opacity-10 transition-opacity duration-1000 ease-in-out group-hover/item:opacity-100"
                 color={"#f97316"}
@@ -83,10 +80,10 @@ export default function Connect() {
                 vy={-0.2}
               />
               <div className="flex justify-center">
-                <div className="flex h-full flex-col justify-center gap-10 p-4 md:h-[300px] rounded-lg md:flex-row">
+                <div className="flex h-full flex-col justify-center gap-10 px-4  md:h-[300px] rounded-lg md:flex-row">
                   <div
                     ref={scope}
-                    className="relative mx-auto h-[270px] w-[300px] md:h-[270px] md:w-[450px] "
+                    className="relative  h-[270px] w-[400px] max-w-350 md:h-[270px] md:w-[450px] "
                   >
                     <Image
                       priority
@@ -115,7 +112,7 @@ export default function Connect() {
                       </motion.div>
                     </div>
                     <div
-                      className="absolute left-2 top-20 rounded-3xl  text-xs opacity-50 "
+                      className="absolute left-5 md:left-2 top-20 rounded-3xl  text-xs opacity-50 "
                       id="react-js"
                     >
                       <motion.div
@@ -132,7 +129,7 @@ export default function Connect() {
                       </motion.div>
                     </div>
                     <div
-                      className="absolute bottom-16 right-1 rounded-3xl  text-xs opacity-50 "
+                      className="absolute bottom-16 right-10 md:right-1 rounded-3xl  text-xs opacity-50 "
                       id="typescript"
                     >
                       <motion.div
@@ -183,7 +180,7 @@ export default function Connect() {
                         />
                       </svg>
                       <span className="bg-ali relative -top-1 left-3 rounded-3xl px-2 py-1 text-xs text-white">
-                        Ali
+                        Yenilik
                       </span>
                     </div>
                   </div>

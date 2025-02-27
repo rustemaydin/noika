@@ -70,7 +70,7 @@ const Skeleton = () => {
   }, []);
 
   return (
-    <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
+    <div className="p-8 px-4 overflow-hidden h-full relative flex items-center justify-center">
       <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
         <Container className="h-12 w-12 circle-1 p-2">
           <Image

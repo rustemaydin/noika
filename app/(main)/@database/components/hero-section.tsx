@@ -3,12 +3,9 @@ import AnimatedCard from "./animated";
 const Hero = () => {
   return (
     <div className="container">
-      <div className="grid items-center gap-8 lg:grid-cols-2">
-        <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-          {/* <Badge variant="outline">
-              New Release
-              <ArrowDownRight className="ml-2 size-4" />
-            </Badge> */}
+      <div className="grid items-center gap-8 px-4 grid-cols-1 lg:grid-cols-2">
+        {/* Mobilde önce, lg'de sonra */}
+        <div className="flex flex-col items-center text-center lg:order-2">
           <h1 className="my-6 text-pretty text-4xl font-bold lg:text-6xl">
             Kullandığımız Veritabanları
           </h1>
@@ -18,16 +15,12 @@ const Hero = () => {
             ise esnekliğiyle projeleriniz için ideal. Hızlı, güvenli ve
             ölçeklenebilir veritabanı çözümleri sunuyoruz.
           </p>
-          {/* <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
-              <Button className="w-full sm:w-auto">Primary Button</Button>
-              <Button className="w-full 
-              sm:w-auto" variant="outline">
-                Secondary Button
-                <ArrowDownRight className="ml-2 size-4" />
-              </Button>
-            </div> */}
         </div>
-        <AnimatedCard />
+
+        {/* Mobilde sonra, lg'de önce */}
+        <div className="lg:order-1">
+          <AnimatedCard />
+        </div>
       </div>
     </div>
   );

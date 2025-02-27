@@ -30,10 +30,6 @@ const files = [
   },
 ];
 
-const icons = [
-  { Icon: ArrowBigDown, name: "Beam" },
-  { Icon: ArrowBigDown, name: "Beam Multiple Outputs" },
-];
 const features = [
   {
     Icon: FileTextIcon,

@@ -18,24 +18,20 @@ export const metadata: Metadata = {
 interface MainLayoutProps {
   children: React.ReactNode;
   hero: React.ReactNode;
-  features: React.ReactNode;
-  database: React.ReactNode;
-  services: React.ReactNode;
+  projects: React.ReactNode;
+  pricing: React.ReactNode;
 }
 
 export default function MainLayout({
   hero,
-  features,
-  services,
-  database,
+  projects,
+  pricing,
 }: MainLayoutProps) {
   return (
     <main className="container ">
       {hero}
-      <SparklesPreview />
-      {/* {features} */}
-      {services}
-      {database}
+      {projects}
+      {pricing}
       <Footer />
     </main>
   );

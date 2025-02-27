@@ -77,7 +77,7 @@ export const Navbar = () => {
               </p>
             </NextLink>
           </NavbarItem>
-          <NavbarItem key={"4"}>
+          {/* <NavbarItem key={"4"}>
             <NextLink
               className={clsx(
                 linkStyles({ color: "foreground" }),
@@ -90,8 +90,8 @@ export const Navbar = () => {
                 {"AI"}
               </p>
             </NextLink>
-          </NavbarItem>
-          <NavbarItem key={"5"}>
+          </NavbarItem> */}
+          {/* <NavbarItem key={"5"}>
             <NextLink
               className={clsx(
                 linkStyles({ color: "foreground" }),
@@ -102,11 +102,11 @@ export const Navbar = () => {
             >
               {"Hakkımızda"}
             </NextLink>
-          </NavbarItem>
+          </NavbarItem> */}
         </ul>
       </NavbarContent>
       <NavbarContent className="hidden sm:flex" justify="end">
-        <NavbarItem className="hidden sm:flex gap-2">
+        {/* <NavbarItem className="hidden sm:flex gap-2">
           <Link isExternal aria-label="Twitter" href={siteConfig.links.twitter}>
             <TwitterIcon className="text-default-500" />
           </Link>
@@ -116,8 +116,8 @@ export const Navbar = () => {
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
           </Link>
-          <ThemeSwitch />
-        </NavbarItem>
+          </NavbarItem> */}
+        <ThemeSwitch />
         <NavbarItem className="hidden md:flex">
           <ShinyButton>İletişime Geç</ShinyButton>
         </NavbarItem>
