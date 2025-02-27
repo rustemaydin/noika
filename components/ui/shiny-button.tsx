@@ -34,7 +34,10 @@ interface ShinyButtonProps extends Omit<HTMLMotionProps<"button">, "ref"> {
   children: React.ReactNode;
   className?: string;
 }
-
+const handleClick = () => {
+  window.location.href =
+    "https://wa.me/905551112233?text=Merhaba,%20bilgi%20almak%20istiyorum!";
+};
 export const ShinyButton = React.forwardRef<
   HTMLButtonElement,
   ShinyButtonProps
@@ -42,6 +45,7 @@ export const ShinyButton = React.forwardRef<
   return (
     <motion.button
       ref={ref}
+      onClick={handleClick}
       className={cn(
         "relative rounded-lg px-6 py-2 font-medium backdrop-blur-xl transition-shadow duration-300 ease-in-out hover:shadow dark:bg-[radial-gradient(circle_at_50%_0%,hsl(var(--primary)/10%)_0%,transparent_60%)] dark:hover:shadow-[0_0_20px_hsl(var(--primary)/10%)]",
         className
